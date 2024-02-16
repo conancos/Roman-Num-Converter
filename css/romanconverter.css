@@ -1,0 +1,121 @@
+body {
+    background: #000;
+    background: url("../images/conversor55-PRO1400x840.jpg");
+}
+
+.main .main-machine .codec-js {
+    position: absolute;
+    top: 0;
+    left: 53%;
+    transform: translate(-50%);
+    width: 35%;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    & .label-numbers {
+        width: 120%;
+    } 
+    & .label-numbers #input-numbers, .result-conversion {
+        width: 100%;
+        padding: 6px 10px;
+        margin: 0px 0px 0 0px;
+        border: none;
+        font-size: clamp(1rem, 5.5vw, 2rem);
+        text-align: center;
+        border-radius: 17px;
+        color: #00f;
+        border: groove 4px #0ff;
+        /* background: linear-gradient(-45deg, #0bac 20%, #00f7 50%, #0bac 80%); */
+        background: #ffdd;
+        text-shadow: 0 0 2px #000;
+        box-shadow: inset 0px 0px 8px 2px #00f, 0 0 4px 1px #05f, 0 0 6px 2px #0af;
+        transition: all .4s;
+    }
+    & .result-conversion {
+        margin-bottom: 19%;
+        min-width: calc(100% + 20px);
+        width: fit-content;
+    }
+    & .label-numbers #input-numbers::placeholder {
+        color: #00f;
+        height: content;
+        max-height: content;
+        font-size: clamp(1rem, 5.5vw, 2rem);
+        position: relative;
+        transition: all .5s;
+    }
+    & .label-numbers #input-numbers:focus::placeholder {
+        color: #aaa;
+        text-shadow: 0 0 2px #00f;
+    }
+    & .label-numbers #input-numbers:focus {
+        outline: none;
+        transition: all .5s ease-in-out;
+        box-shadow: inset 0px 0px 8px 4px #00f, 0 0 6px 2px #05f, 0 0 10px 4px #0af;
+        color: #00f;
+        caret-color: #000;        
+        
+    }
+    & .magic-button {
+        width: clamp(80px, 25lvw, 110px);
+        height: clamp(80px, 25lvw, 110px);
+        user-select: none;
+        /* pointer-events: none; */
+        background-size: contain;
+        
+        margin-top: 0%;
+        margin-left: 2%;
+        padding: 5px 5px;
+        cursor: pointer;
+        border: 4px groove #000;
+        box-shadow: inset 0 0 6px 3px #fff,
+            0 0 4px 1px #cc0, 
+            0 0 8px 2px #ff0, 
+            0 0 12px 4px #f00;
+        border-radius: 50%;
+        background: #000;
+        overflow: hidden;
+        transition: .4s;
+
+        & .img-button {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            user-select: none;
+            transition: all 0.2s;
+        }
+    }
+
+    & .magic-button:hover {
+        box-shadow: inset 0 0 6px 3px #fff,
+            0 0 6px 3px #cc0,
+            0 0 10px 5px #ff0,
+            0 0 15px 7px #f00;
+        /* user-select: none; */
+        
+    }
+    
+    & .magic-button:active {
+        box-shadow: inset 0 0 2px 1px #fff, 
+            0 0 10px 3px #f00, 
+            0 0 14px 5px #f00,
+            0 0 28px 7px #f00;
+        /* user-select: none; */
+        transition: .2s;
+    }
+    /* & .magic-button:active .magic-button {
+        transition: 1.5s;
+    } */
+    & .magic-button:active .img-button {
+        filter: drop-shadow(0 0 1px #f00);
+        transform: translateY(3px) translateX(2px);
+        width: 90%;
+        height: 90%;
+    }
+}
