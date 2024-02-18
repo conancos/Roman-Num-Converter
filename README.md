@@ -10,7 +10,7 @@
 
 <br>
 
-🟨 **Visit:** [Roman Num Converter ↗](https://conancos.dev/next/logica-js/PalindromeCheckingMachine/index.html) 🟨
+🟨 **Visit:** [Roman Num Converter ↗](https://conancos.dev/next/logica-js/RomanNumeralConverter/index.html) 🟨
 
 
 <img alt="logo machine" src="./images/conversor512x768-555-PRO.jpg">
